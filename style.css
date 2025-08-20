@@ -3,6 +3,7 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
 }
 
 .main-card {
@@ -16,7 +17,9 @@ body {
 }
 
 img {
-    width: 30%;
+    max-width: 30%;
+    height: 80%;
+    display: block;
     margin: 20px;
     border-radius: 50%;
 }
@@ -54,4 +57,24 @@ a {
 .curriculo:hover {
     background-color: white;
     color:rgb(26, 155, 230);
+}
+
+.header {
+    background-color: rgb(26, 155, 230);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    margin: 0 10px;
+    transition: 0.2s ease;
+    padding: 8px;
+    border-radius: 8px; 
+}
+
+.header a:hover {
+    background-color: white;
+    color: rgb(26, 155, 230);
 }
